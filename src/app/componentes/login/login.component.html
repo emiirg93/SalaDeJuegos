@@ -1,27 +1,4 @@
-<!--div style="margin: 20% auto; width: 30%;">
-  <div class="row">
-    <div class="col-lg-6">
-      Usuario
-    </div>
-    <div class="col-lg-6">
-      <input type="text"  [(ngModel)]="usuario">
-    </div>
-  </div>
-  <div class="row" style="margin-top: 5px">
-    <div class="col-lg-6">
-      Clave
-    </div>
-    <div class="col-lg-6">
-      <input type="password" [(ngModel)]="clave">
-    </div>
-  </div>
-  <div class="row" style="text-align: center; margin-top: 10px">
-    <div class="col-lg-12">
-      <button (click)="Entrar()" class="btn btn-info btn-lg" >Entrar</button>
-    </div>
-  </div>
-</div-->
- <div class="container" >
+<!-- <div class="container" >
   <div class="jumbotron" style="padding:50px;">
     <form action="return true;">
       <div class="imgcontainer">
@@ -52,6 +29,44 @@
         <span class="psw">Te olvidaste <a href="#">la clave?</a></span>
       </div>
      
+    </form>
+  </div>
+</div> -->
+<div class="contenedor-login animated fadeInLeft">
+  <div class="contenedor-i-volver">
+    <a routerLink="/Principal"><i class="far fa-arrow-alt-circle-left"></i></a>
+  </div>
+
+  <div class="contenedor">
+    <form action="#" method="post">
+      <div class="icono-cabecera">
+        <i class="far fa-user-circle animated fadeIn"></i>
+      </div>
+
+      <div class="contenedor" class="form-conprincipal">
+
+        <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+
+        <input type="password" name="clave" id="clave" placeholder="Contraseña">
+
+      </div>
+
+
+      <div class="contenedor-botones">
+        <button>Ingresar</button>
+      </div>
+
+      <div class="contenedor-check">
+        <input type="checkbox" name="recordar" id="check-recordar">
+        <label>Recordar Mis Datos</label>
+        <span class="psw">Te olvidaste <a href="#">la clave?</a></span>
+      </div>
+
+      <hr>
+
+      <div class="contenedor-registro">
+          <p>No tienes una cuenta? <a routerLink="/Registro">REGISTRATE</a></p>
+      </div>
     </form>
   </div>
 </div>
