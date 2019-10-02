@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@fortawesome/fontawesome-free/css/all.css";
+html{
+    font-size: 62.5%; /*reset REMS 62.5% = 10px de 16px(tamaño definido por default)*/
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    background-image: url(./assets/imagenes/fondo_pagina.jpg);
+    font-size: 1.6rem;
+    line-height: 2;
+    color: white;
+}
+
+.mayusculas{
+    text-transform: uppercase;
+}
+.contenedor{
+    width: 95%;
+    max-width: 120rem; /*1200px*/ 
+    /*toma cuatro valores ej: margin: top right bottom left*/
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.text-center{   
+    text-align: center;
+}
